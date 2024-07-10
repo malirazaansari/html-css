@@ -1,0 +1,122 @@
+/* *,
+*::before,
+*::after {
+  box-sizing: border-box;
+} */
+/* html {
+  font-size: 62.5%;
+} */
+body {
+  margin: 10px;
+  /* height: 400vh; */
+}
+.para {
+  padding: 5px;
+  margin: 5px;
+  border: 5px solid burlywood;
+}
+.box::before {
+  content: "Ansari";
+}
+.box {
+  width: 100px;
+  height: 100px;
+  background: rgb(124, 124, 7);
+  padding: 20px;
+  border: 10px solid rebeccapurple;
+  margin: 30px;
+  /* box-sizing: border-box; */
+  display: inline-block;
+}
+.para2 {
+  width: 50vw;
+  height: 150px;
+  height: 10em; /*vh, vw,em,rem*/
+  background-color: rgb(34, 226, 0);
+  border-top: 5px solid burlywood;
+  /* overflow: hidden auto; */
+  /* overflow-y: auto; */
+}
+
+.boxes {
+  /* width: 300px;
+  height: 300px; */
+  border: 10px solid gray;
+  position: relative;
+}
+.boxs {
+  width: 5rem;
+  height: 5rem;
+}
+.boxone {
+  /* width: 100px;
+  height: 100px; */
+  background-color: #00bbff;
+}
+.boxtwo {
+  /* width: 100px;
+    height: 100px; */
+  background-color: #d4ff00;
+  position: absolute;
+  left: 0;
+  /* left: 4rem; */
+  /* top: 1rem; */
+  bottom: 0;
+  z-index: 1; /*we can add - (negative) for going down on another block*/
+}
+.boxthree {
+  /* width: 100px;
+  height: 100px; */
+  /* position: fixed; */
+  left: 3rem;
+  right: 3rem;
+  width: auto;
+  background-color: #ff00fb;
+}
+
+.avatar {
+  width: 5rem;
+  height: 5rem;
+  background-color: goldenrod;
+  float: left;
+  margin-right: 0.5rem;
+}
+.clear {
+  clear: both;
+}
+
+.tweet {
+  border: 5px solid black;
+  /*1. overflow: hidden; for same floating points issur solve*/
+}
+/*2. we can also use here 2nd name of element as a class...like clearfix etc*/
+.clearfix::after {
+  content: "";
+  display: block; /*for give him specs like div*/
+  clear: both;
+}
+
+/*flexbox*/
+
+.flexbox {
+  border: 5px solid brown;
+  display: flex;
+  /* flex-direction: column-reverse; */
+  /* justify-content: space-evenly; */
+  justify-content: center;
+  align-items: center;
+  /* flex-wrap: wrap;
+  align-content: center; */
+  height: 50vh;
+  flex-basis: 15rem;
+}
+.box1 {
+  width: 3rem;
+  height: 3rem;
+  background-color: #d4ff00;
+  margin: 0.5rem;
+}
+.box-a {
+  /*align items same*/
+  /* align-self: flex-start; */
+}
