@@ -108,9 +108,10 @@ body {
   /* flex-wrap: wrap;
   align-content: center; */
   height: 50vh;
-  flex-basis: 15rem;
 }
 .box1 {
+  flex-basis: 5rem;
+  /* flex-grow: 1; */
   width: 3rem;
   height: 3rem;
   background-color: #d4ff00;
@@ -119,4 +120,113 @@ body {
 .box-a {
   /*align items same*/
   /* align-self: flex-start; */
+  /* flex-basis: 5rem; */
+  flex-grow: 2;
+  /* flex-shrink: 0; */
+}
+
+/*GRID*/
+.container {
+  display: grid;
+  grid-template: 30px auto 30px / 30fr 70fr; /*% keyward also use on fr*/
+  /* row-gap: 10px;
+  column-gap: 10px; */
+  gap: 10px;
+  border: 3px solid blueviolet;
+  height: 40vh;
+  grid-template-areas:
+    "header  header"
+    "sidebar main"
+    ".       footer";
+}
+
+.box6 {
+  background-color: brown;
+}
+
+.box-A {
+  grid-column: 1 / -1; /*we can use line numbers for inpects, also use span tag and also use the -1 */
+  /* grid-row: 3; */
+  /* grid-area: 1/1 /1/3;very taf so not perferable */
+}
+.box-D {
+  grid-area: footer;
+  /* grid-column: auto; */
+}
+
+.first {
+  visibility: hidden;
+}
+.contain {
+  display: flex;
+  flex-direction: column;
+}
+.bosx {
+  background-color: #ff00fb;
+  padding: 1px;
+  margin: 1px;
+}
+.bosx:nth-of-type(2) {
+  background-color: #d4ff00;
+}
+
+@media screen and (min-width: 600px) {
+  .contain {
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 900px) {
+  .bosx {
+    background-color: rgb(253, 0, 0);
+  }
+}
+@media print {
+  body {
+    font-size: 12px;
+  }
+  .bosx {
+    padding: 0.5px;
+  }
+}
+.navbar {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+  background-color: black;
+  color: white;
+  font-family: Arial;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .navbox {
+    display: flex;
+  }
+  .parag {
+    padding: 5px;
+  }
+}
+img {
+  width: 100px;
+  height: 100px;
+}
+
+.pics {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  background-color: #2f00ff;
+  gap: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .pics {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px;
+  }
 }
