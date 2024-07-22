@@ -35,3 +35,9 @@ body {
   filter: blur(1px);
   filter: grayscale();
 }
+.meal-lenght {
+  width: 400px;
+}
+.ufo {
+  width: 10rem;
+}
