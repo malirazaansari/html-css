@@ -1,0 +1,22 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: brown;
+}
+.contanier {
+  perspective: 200px;
+}
+.contanier:hover .box {
+  /* transform: translateX(50px) rotate(45deg); */
+  transform: rotateY(45deg);
+  transform-origin: 0 70%;
+}
+.contanier:hover .box-special {
+  transform: rotateX(45deg);
+}
