@@ -8,6 +8,7 @@ body {
   width: 100px;
   height: 100px;
   background-color: brown;
+  transition: transform 0.5s linear 1s;
 }
 .contanier {
   perspective: 200px;
@@ -17,6 +18,10 @@ body {
   transform: rotateY(45deg);
   transform-origin: 0 70%;
 }
+.box-special {
+  transition: transform 0.5s, background;
+}
 .contanier:hover .box-special {
   transform: rotateX(45deg);
+  background: dodgerblue;
 }
