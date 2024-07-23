@@ -1,0 +1,14 @@
+:root {
+  --color-primary: gold;
+  --border-size: 2px;
+  --border-radius: 10px;
+}
+
+.one {
+  background-color: var(--color-primary);
+}
+.two {
+  background-color: var(--color-primary);
+  border: var(--border-size) solid black;
+  border-radius: var(--border-radius);
+}
