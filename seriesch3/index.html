@@ -26,18 +26,57 @@
         <li class="nav__item"><a href="#">Pricing</a></li>
       </ul>
     </nav>
-    <section class="block block--dark block--skewed-left">
+    <section class="block block--dark block--skewed-left hero">
       <div class="container grid grid--1x2">
-        <div class="hero__content">
+        <header class="block__header hero__content">
           <h1 class="block__heading">Cloud Hosting for PROS</h1>
           <p class="hero__tagline">
             Deploy your websites in less than 60 seconds.
           </p>
           <a href="" class="btn btn--ancent btn--stretched">Get Started</a>
-        </div>
-        <img class="hero__image" src="images/banner.png" alt="" />
+        </header>
+        <picture>
+          <source
+            type="image/webp"
+            srcset="images/banner.webp 1x, images/banner@2x.webp 2x" />
+          <source
+            type="image/png"
+            srcset="images/banner.png 1x, images/banner@2x.png 2x" />
+          <img class="hero__image" src="images/banner.png" alt=""
+        /></picture>
       </div>
     </section>
+    <section class="block containe block-domain">
+      <header class="block__header">
+        <h2>Start at $9 per month</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla,
+          dolore.
+        </p>
+      </header>
+      <div class="input-group">
+        <input
+          type="text"
+          class="input"
+          placeholder="Enter domain name here..."
+        />
+        <button class="btn btn--ancent">
+          <svg class="icon icon--white">
+            <use xlink:href="images/sprite.svg#search"></use>
+          </svg>
+          Search
+        </button>
+      </div>
+      <ul class="list block-domain__prices">
+        <li><span class="badge badge--secondary">.com $9</span></li>
+        <li>.sg $10</li>
+        <li>.space $11</li>
+        <li>.info $14</li>
+        <li>.net $10</li>
+        <li>.xyz $10</li>
+      </ul>
+    </section>
+
     <h1>Heading 1</h1>
     <h2>Heading 2</h2>
     <h3>Heading 3</h3>
@@ -64,12 +103,12 @@
     <button class="btn btn--ancent btn--block">3rd button</button>
     <input type="text" class="input" placeholder="Enter domain name here..." />
     <div class="input-group">
-      <button class="btn btn--ancent">Search</button>
       <input
         type="text"
         class="input"
         placeholder="Enter domain name here..."
       />
+      <button class="btn btn--ancent">Search</button>
     </div>
     <div style="width: 30%; padding: 4rem">
       <div class="card card--secondary">
