@@ -367,6 +367,7 @@ a {
 
 .media__title {
   margin-top: 0;
+  color: var(--color-border);
 }
 
 .media__body {
@@ -529,7 +530,12 @@ a {
   text-align: center;
   margin-bottom: 4rem;
 }
-
+/* .block__header .list {
+  color: var(--color-body);
+} */
+.block__list {
+  color: var(--color-body);
+}
 .block__heading {
   margin-top: 0;
 }
