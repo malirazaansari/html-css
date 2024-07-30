@@ -7,6 +7,10 @@
   --std_green: #2baa8c;
   --std_light_green: #d5eee8;
 }
+img {
+  max-width: 100%;
+  display: inline-block;
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -21,6 +25,28 @@ form {
   margin-top: 0em;
   unicode-bidi: isolate;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+h3 {
+  margin-top: 20px;
+  font-size: 24px;
+  line-height: 30px;
+}
+h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+/* footer */
 .div_full-block {
   color: #fff;
   background-image: url(https://cdn.prod.website-files.com/6241944…/64194d6…_Intro.png);
@@ -290,3 +316,150 @@ a {
     font-size: 1.6rem;
   }
 } */
+/* cards */
+.card {
+  border-radius: 7px;
+  box-shadow: 0 0 20px 10px #f3f3f3;
+  overflow: hidden;
+}
+
+.card__header,
+.card__body {
+  padding: 2rem 3rem;
+}
+
+.card--primary .card__header {
+  background: #2584ff;
+  color: #fff;
+}
+
+.card--secondary .card__header {
+  background: #00d9ff;
+  color: #fff;
+}
+
+.card--primary .badge--primary {
+  background: #126de4;
+}
+.card--secondary .badge--secondary {
+  background: #02cdf1;
+}
+.short_program_card {
+  background-position: 170% 100%;
+  background-repeat: no-repeat;
+  background-size: auto;
+  border: 2px solid #000;
+  border-radius: 12px;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 320px;
+  height: 320px;
+  padding: 60px 24px 24px;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 2px 2px #fff, 3px 3px rgba(3, 10, 33, 0.3);
+}
+.card_content_block {
+  grid-column-gap: 20px;
+  display: flex;
+}
+.card_content_block .is_extensive {
+  grid-column-gap: 12px;
+  white-space-collapse: collapse;
+  text-wrap: nowrap;
+}
+.short_card_heading {
+  font-size: 1.75rem;
+  font-weight: 500;
+}
+.card_content {
+  grid-row-gap: 8px;
+  flex-direction: column;
+  display: flex;
+}
+.card_content_div {
+  z-index: 2;
+  grid-row-gap: 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  display: flex;
+  position: relative;
+}
+.card_content_div .is_workshop {
+  grid-row-gap: 16px;
+}
+.mentor_image {
+  object-fit: cover;
+  background-color: #fff;
+  width: 100%;
+  max-width: none;
+  height: 100%;
+  overflow: visible;
+}
+.mentor_pic {
+  border: 1px solid #000;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+}
+.text-block-265 {
+  font-weight: 500;
+  line-height: 1.2;
+}
+.text-block-265 .mentor_name {
+  color: var(--bg_dark);
+}
+.text-block-266 {
+  color: rgba(3, 10, 33, 0.7);
+  font-size: 0.75rem;
+  line-height: 1.2;
+}
+.mentor_desgination {
+  display: flex;
+}
+.mentor_info {
+  grid-row-gap: 4px;
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
+}
+.card_mentor {
+  grid-column-gap: 8px;
+  margin-top: 16px;
+  display: flex;
+}
+.icon_1x1_atom {
+  align-self: center;
+  width: 1rem;
+  height: 1rem;
+}
+.preview_link {
+  z-index: 6;
+  grid-column-gap: 3px;
+  color: var(--acid-green);
+  cursor: pointer;
+  align-self: flex-start;
+  align-items: center;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1;
+  display: flex;
+  position: relative;
+}
+.preview_link.is_masterclass {
+  color: #056a67;
+  font-size: 1rem;
+}
+.short_program_card.is_masterclasses {
+  background: linear-gradient(
+    270deg,
+    rgba(55, 237, 129, 0.2),
+    rgba(255, 255, 255, 0.2)
+  );
+  height: 340px;
+}
+.short_program_card.is_masterclasses.is_buynow {
+  height: 300px;
+}
