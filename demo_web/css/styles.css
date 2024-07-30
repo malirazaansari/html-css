@@ -111,9 +111,7 @@ a {
 }
 
 .three_block_div {
-  /* max-width: 1020px;
-  margin-left: auto;
-  margin-right: auto; */
+  max-width: 1020px;
   position: relative;
   justify-content: space-evenly;
   align-items: center;
@@ -125,7 +123,9 @@ a {
   grid-auto-columns: 1fr;
   display: grid;
   max-width: auto;
-  margin: 0 30rem;
+  /* margin: 0 30rem; */
+  margin-left: auto;
+  margin-right: auto;
   box-sizing: border-box;
 }
 .linkedin_divs {
@@ -149,12 +149,12 @@ a {
 }
 .linkedin_divs h4 {
   font-weight: 500;
-  font-size: 0.9rem;
+  font-size: 0.825rem;
   color: #b8bfd6;
 }
 .linkedin_divs p {
   font-weight: 600;
-  font-size: 1.4rem;
+  font-size: 1.25rem;
 }
 .linkedin__image {
   width: 100%;
@@ -277,13 +277,16 @@ a {
 }
 .footer__section li {
   margin-bottom: 1rem;
+  font-size: 1rem;
 }
 .footer__section h2 {
   margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 500;
 }
 .btn__accent {
   height: 2rem;
-  width: 8rem;
+  width: 12.5rem;
 }
 /* Footer
 .footer {
@@ -522,6 +525,11 @@ a {
   background-color: rgba(203, 177, 73, 0.2);
   border-color: rgba(121, 104, 34, 0.3);
 }
+.booster.is_light_purple {
+  color: #4b3d66;
+  background-color: rgba(90, 59, 153, 0.2);
+  border-color: rgba(150, 98, 255, 0.3);
+}
 .boosters_list {
   z-index: 4;
   grid-column-gap: 16px;
@@ -550,6 +558,27 @@ a {
   margin-bottom: 40px;
   display: flex;
 }
+
+.cbna {
+  width: 100px;
+  height: 100px;
+}
+.track_horizontal_1 {
+  display: flex;
+
+  transform: translate3d(-87.249%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
+    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+.investor_horizontal {
+  z-index: 20;
+  justify-content: flex-start;
+  width: 200%;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
 .investor_logo {
   border: 2px solid var(--bg_dark);
   background-color: #fff;
@@ -558,7 +587,41 @@ a {
   align-items: center;
   width: 240px;
   height: 120px;
-  margin: 20px 0;
+  margin: 0 20px;
   padding: 32px 36px;
   display: flex;
+}
+.investor_component {
+  padding: 40px 0;
+}
+.feature_component {
+  display: block;
+  padding-top: 200px;
+  padding-bottom: 160px;
+}
+.feature_component.category_component {
+  padding-top: 140px;
+}
+.feature_section {
+  position: relative;
+  overflow: hidden;
+}
+/* self placed section cards goona full ready */
+.container_of_cards {
+  position: relative;
+}
+.cards_container {
+  display: grid;
+  margin-top: 80px;
+  grid-row-gap: 44px;
+  grid-column-gap: 44px;
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-columns: 1fr;
+  justify-content: flex-start;
+}
+.section_self_placed {
+  padding: 80px 0;
+  position: relative;
+  overflow: hidden;
 }
