@@ -625,3 +625,90 @@ a {
   position: relative;
   overflow: hidden;
 }
+/* section stat */
+.stat_section {
+  background: none;
+  padding: 80px 0;
+  position: relative;
+}
+.stat_component {
+  display: flex;
+  flex-direction: column;
+  grid-row-gap: 40px;
+}
+.stat_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  grid-column-gap: 40px;
+  grid-row-gap: 20px;
+}
+.stat_card {
+  display: flex;
+  grid-row-gap: 12px;
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+  border: 2px solid var(--bg_dark);
+  background-color: #fff;
+  border-radius: 12px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.cards_image {
+  height: 48px;
+}
+.stat_numbers {
+  font-size: 3rem;
+  font-weight: 600;
+  letter-spacing: -0.02rem;
+  line-height: 1;
+  display: inline-block;
+}
+.stat_numbers span {
+  font-size: 1.25rem;
+}
+.stat_card_content {
+  font-size: 1rem;
+  font-weight: 500;
+  opacity: 0.7;
+}
+.stat_animation {
+  position: relative;
+}
+.stat_animation_text {
+  width: 100%;
+  max-width: 48rem;
+  margin: 0 auto;
+}
+.stat_text_container {
+  max-width: 30rem;
+  margin: 50px auto;
+}
+.stat_text {
+  font-size: 1.25rem;
+  text-align: center;
+}
+.stat_animation_container {
+  filter: invert();
+}
+.investor_horizontal.stat_horizontal {
+  grid-column-gap: 40px;
+}
+.track_horizontal_1.stat_logos {
+  grid-column-gap: 60px;
+}
+.stat_logo_box {
+  display: flex;
+  width: 80px;
+  justify-content: center;
+  align-items: center;
+}
+.stat_images {
+  max-width: 80px;
+  max-height: 1.75rem;
+  object-fit: contain;
+}
