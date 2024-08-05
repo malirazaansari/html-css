@@ -760,6 +760,11 @@ a {
 .booster.is_light_yellow_extnesice {
   color: #fff0b2;
 }
+.is_green_yellow {
+  color: #1f331f;
+  background-color: #3d993b33;
+  border-color: #3374314d;
+}
 .extensice_mentor {
   z-index: 1;
   justify-content: flex-end;
@@ -865,4 +870,93 @@ a {
 }
 .preview_link.is_brown {
   color: #ff906c;
+}
+.preview_link.is_yellow {
+  color: hsla(47.86516853932585, 100%, 65.1%, 1);
+}
+.preview_link.is_dark_green {
+  color: #2baa38;
+}
+.short_program_card.light_yellow_color {
+  color: #000;
+}
+.short_program_card.light_yellow_color {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 254, 1) 0%,
+    rgba(255, 248, 221, 1) 100%
+  );
+}
+.extensive_image.is_crash {
+  filter: grayscale();
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 100%;
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+  box-shadow: 0 4px 80px #0b112480;
+}
+.extensice_mentor_name.is_crash {
+  color: #030a21;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 4px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2px 4px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 1.4;
+  display: inline-block;
+  position: relative;
+  top: -20px;
+  bottom: auto;
+}
+.extensice_name.is_crash {
+  color: #030a21;
+}
+.extensice_mentor_image.is_crash {
+  z-index: 2;
+  flex-direction: column;
+  align-items: center;
+  margin-right: -13px;
+  display: flex;
+  position: relative;
+  top: 20px;
+}
+.extensice_mentor.is_crash {
+  z-index: 2;
+  width: auto;
+  height: auto;
+  position: absolute;
+  bottom: 17px;
+  right: 25px;
+}
+.short_program_card.light_dark_yellow_color {
+  background: linear-gradient(
+    90deg,
+    rgba(254, 254, 254, 1) 0%,
+    rgba(231, 226, 208, 1) 100%
+  );
+}
+.short_program_card.light_dark_green_color {
+  background: linear-gradient(
+    90deg,
+    rgba(254, 254, 254, 1) 0%,
+    rgba(215, 239, 233, 1) 100%
+  );
+}
+.short_program_card.orange_color {
+  background: linear-gradient(
+    90deg,
+    rgba(254, 254, 254, 1) 0%,
+    rgba(245, 223, 215, 1) 100%
+  );
+}
+.preview_link.is_orange {
+  color: #cc5831;
+}
+.preview_link.is_little_dark_green {
+  color: #2baa8c;
 }
