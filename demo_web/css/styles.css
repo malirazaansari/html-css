@@ -757,6 +757,9 @@ a {
   background-color: rgba(61, 153, 59, 0.2);
   border-color: rgba(101, 255, 98, 0.3);
 }
+.booster.is_light_yellow_extnesice {
+  color: #fff0b2;
+}
 .extensice_mentor {
   z-index: 1;
   justify-content: flex-end;
@@ -822,6 +825,12 @@ a {
   position: absolute;
   top: 40px;
 }
+.extensice_background.is_green {
+  background-color: #e8ff5e;
+}
+.extensice_background.is_brown {
+  background-color: #ff906c;
+}
 .extencise_background_box {
   background-image: linear-gradient(
     to bottom,
@@ -833,4 +842,27 @@ a {
   bottom: 0%;
   left: 0%;
   right: 0%;
+}
+.short_program_card.green_color {
+  color: #fff;
+  background: linear-gradient(
+    90deg,
+    rgba(46, 56, 44, 1) 0%,
+    rgba(36, 42, 35, 1) 17%,
+    rgba(3, 10, 33, 1) 100%
+  );
+}
+.preview_link.is_green {
+  color: #e8ff5e;
+}
+.short_program_card.brown_color {
+  color: #fff;
+  background: linear-gradient(
+    90deg,
+    rgba(52, 36, 48, 1) 0%,
+    rgba(3, 10, 33, 1) 100%
+  );
+}
+.preview_link.is_brown {
+  color: #ff906c;
 }
