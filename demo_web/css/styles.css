@@ -960,3 +960,46 @@ a {
 .preview_link.is_little_dark_green {
   color: #2baa8c;
 }
+.quiz_banner {
+  grid-column-gap: 4px;
+  grid-row-gap: 4px;
+  color: var(--white);
+  background-color: var(--bg_dark);
+  background: linear-gradient(
+    90deg,
+    rgba(3, 10, 33, 1) 0%,
+    rgba(12, 41, 134, 1) 40%,
+    rgba(3, 10, 33, 1) 100%
+  );
+  background-position: 94%, 20% 40%, 0 0;
+  background-repeat: no-repeat, no-repeat, repeat;
+  background-size: auto, auto, 721px;
+  border-radius: 16px;
+  flex-direction: column;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 32px;
+  display: flex;
+  box-shadow: 2px 2px #fff, 3px 3px #030a21;
+}
+.quiz_banner.industry_page {
+  max-width: none;
+  margin-top: 40px;
+}
+.still_confused {
+  font-size: 1.75rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+.next_step_quiz {
+  grid-column-gap: 4px;
+  grid-row-gap: 4px;
+  font-weight: 500;
+  display: flex;
+}
+.quiz_image {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
