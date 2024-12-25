@@ -1,0 +1,66 @@
+#products + p {
+  color: cadetblue;
+}
+
+p {
+  font-size: 18px;
+  color: blueviolet;
+}
+
+/* pessudo classes */
+a:first-of-type {
+  color: brown;
+}
+a:last-child {
+  color: blueviolet;
+}
+
+a:hover,
+a:focus {
+  color: aqua;
+}
+
+ul li:nth-child(odd) {
+  color: chocolate;
+  font-weight: bold;
+}
+
+ul li:nth-child(even) {
+  color: forestgreen;
+  font-style: italic;
+}
+
+/* pesudo element */
+p::first-letter {
+  font-size: 30px;
+  color: crimson;
+}
+
+p::first-line {
+  font-style: italic;
+}
+::selection {
+  background-color: darkgreen;
+}
+
+.box1 {
+  width: 200px;
+  height: 200px;
+  background-color: aqua;
+  background: linear-gradient(45deg, green, red);
+  border: 10px solid black;
+  box-shadow: 0 0 50px gray;
+}
+.box2 {
+  width: 200px;
+  height: 200px;
+  /* background: radial-gradient(circle at top left, orange, red); */
+  border: 10px dotted blue;
+  background-color: seagreen;
+  box-shadow: 5px -5px 40px blue;
+}
+
+h2 {
+  color: white;
+  text-shadow: 3px 3px 4px gray;
+}
