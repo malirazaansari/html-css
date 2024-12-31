@@ -1,0 +1,18 @@
+.tweet {
+  border: 5px solid gray;
+}
+
+.tweet::after {
+  content: "";
+  display: block;
+
+  clear: both;
+}
+
+.picture {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  float: left;
+  margin-right: 0.5 /*  */ rem;
+}
